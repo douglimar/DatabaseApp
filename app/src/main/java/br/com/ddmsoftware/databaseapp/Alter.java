@@ -47,6 +47,8 @@ public class Alter extends AppCompatActivity {
         btnAlterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // Commentario Aqiu
                 CRUD.alterData(Integer.parseInt(codigo),livro.getText().toString(),autor.getText().toString(),editora.getText().toString());
 
                 Intent intent = new Intent(Alter.this,Consulta.class);
